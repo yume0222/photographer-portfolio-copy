@@ -1,0 +1,24 @@
+.footer {
+  padding: 32px 0;
+  text-align: center;
+}
+.logo {
+  width: 150px;
+  margin: 0 auto;
+}
+.logo img {
+  display: block;
+}
+.copyright {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  font-family: var(--font-family-english);
+  line-height: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .copyright {
+    margin-top: 16px;
+  }
+}

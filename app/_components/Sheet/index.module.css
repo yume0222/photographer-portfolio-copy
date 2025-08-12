@@ -1,0 +1,19 @@
+.ptb {
+  padding: 80px 0;
+}
+.container, .containerSmall {
+  width: 90%;
+  margin: 0 auto;
+}
+.containerSmall {
+  max-width: 760px;;
+}
+.container {
+  max-width: 1080px;
+}
+
+@media screen and (min-width: 768px) {
+  .ptb {
+    padding: 104px 0;
+  }
+}

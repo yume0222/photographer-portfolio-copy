@@ -1,0 +1,31 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.title {
+  font-size: 14px;
+  letter-spacing: .08em;
+  line-height: 1.6;
+}
+.titleCenter {
+  padding-left: .08em;
+  text-align: center;
+}
+.english {
+  display: block;
+  font-size: 24px;
+  font-family: var(--font-family-english);
+  letter-spacing: .2em;
+  line-height: 1;
+}
+.englishCenter {
+  padding-left: .2em;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .english {
+    font-size: 48px;
+  }
+}

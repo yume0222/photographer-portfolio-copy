@@ -1,0 +1,71 @@
+.body {
+  margin-top: 40px;
+}
+.image img {
+  aspect-ratio: 324/204;
+}
+.text {
+  margin-top: 24px;
+}
+.name {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+.nameJapanese,
+.nameEnglish {
+  line-height: 1;
+  letter-spacing: .2em;
+}
+.nameJapanese {
+  font-size: 18px;
+}
+.nameEnglish {
+  font-size: 12px;
+  font-family: var(--font-family-english);
+  text-transform: uppercase;
+}
+.desc {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 56px;
+    background-color: var(--color-bg-base-light);
+  }
+  .image img {
+    height: 100%;
+    aspect-ratio: inherit;
+    object-fit: cover;
+  }
+  .text {
+    align-self: center;
+    margin-top: 0;
+    padding: 40px 24px;
+  }
+  .name {
+    gap: 16px;
+  }
+  .nameJapanese {
+    font-size: 24px;
+  }
+  .nameEnglish {
+    font-size: 14px;
+  }
+  .desc {
+    gap: 24px;
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .text {
+    padding: 40px;
+  }
+}

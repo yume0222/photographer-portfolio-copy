@@ -1,0 +1,60 @@
+.bg {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: center / cover url("/bg-top-kv-sp.jpg");
+  aspect-ratio: 360/500;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+.text {
+  font-family: var(--font-family-english);
+  text-align: center;
+  line-height: 1;
+}
+.text:nth-child(1) {
+  padding-left: .4em;
+  font-size: 18px;
+  letter-spacing: .4em;
+}
+.text:nth-child(2) {
+  padding-left: .4em;
+  font-size: 26px;
+  letter-spacing: .4em;
+  text-transform: uppercase;
+}
+.text:nth-child(3) {
+  letter-spacing: .2em;
+  padding-left: .2em;
+}
+
+@media screen and (min-width: 768px) {
+  .bg {
+    height: 650px;
+    background: center / cover url("/bg-top-kv.jpg");
+    aspect-ratio: inherit;
+  }
+  .body {
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+  .text:nth-child(1) {
+    font-size: 32px;
+  }
+  .text:nth-child(2) {
+    font-size: 54px;
+  }
+  .text:nth-child(3) {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .text:nth-child(2) {
+    font-size: 72px;
+  }
+}

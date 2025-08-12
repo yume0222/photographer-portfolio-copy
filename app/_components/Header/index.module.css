@@ -1,0 +1,17 @@
+.header {
+  display: grid;
+  place-items: center;
+  height: 65px;
+}
+.logo {
+  width: 150px;
+}
+.logo img {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 220px;
+  }
+}
