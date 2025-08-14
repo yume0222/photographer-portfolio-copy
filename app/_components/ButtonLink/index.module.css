@@ -1,0 +1,41 @@
+.button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-color: var(--color-bg-black);
+  color: var(--color-font-base);
+  width: 100%;
+  max-width: 280px;
+  height: 60px;
+  padding: 0 16px 0 calc(16px + .2em);
+  border: 1px solid var(--color-border-white);
+  font-size: 16px;
+  letter-spacing: .2em;
+  line-height: 1;
+}
+.button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 40px;
+  height: 1px;
+  background-color: var(--color-border-white);
+  transform: translateY(-50%) translateX(15px);
+}
+.buttonCenter {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    max-width: 685px;
+    height: 90px;
+    font-size: 32px;
+  }
+  .button::after {
+    width: 70px;
+    transform: translateY(-50%) translateX(20px);
+  }
+}
