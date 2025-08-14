@@ -30,7 +30,7 @@ const data: {
 
 export default function PhotoSchoolSection() {
   return (
-    <Sheet className1={SheetStyles.ptb} className2={SheetStyles.container}>
+    <Sheet className1={SheetStyles.ptb} className2={SheetStyles.containerSmall}>
       <TitleLevel2
         english="Photo School"
         japanese="写真教室"

@@ -1,0 +1,45 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.label {
+  display: flex;
+  gap: 16px;
+  line-height: 1;
+}
+.required {
+  color: var(--color-font-attention);
+}
+.body {
+  margin-top: 16px;
+}
+.textfield {
+  height: 60px;
+}
+.textarea {
+  height: 200px;
+}
+.button {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  max-width: 250px;
+  height: 60px;
+  margin: 0 auto;
+  border: 1px solid var(--color-border-white);
+  background-color: var(--color-bg-white);
+  color: var(--color-font-black);
+  font-size: 16px;
+}
+.error {
+  color: var(--color-font-attention);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .textarea {
+    height: 250px;
+  }
+}

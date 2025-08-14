@@ -1,0 +1,12 @@
+.text {
+  margin-top: 40px;
+  background-color: var(--color-bg-base-light);
+  text-align: center;
+  padding: 40px;
+}
+
+@media (max-width: 640px) {
+  .text {
+    margin-top: 56px;
+  }
+}
