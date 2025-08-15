@@ -15,6 +15,11 @@ export type Award = {
     height: number;
   };
 }
+export type GalleryImage = {
+  url: string;
+  alt: string;
+};
+
 export type SchoolTableRow = {
   label: string;
   value: string | string[];

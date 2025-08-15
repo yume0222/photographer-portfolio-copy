@@ -1,0 +1,26 @@
+.mainImage {
+  transition: opacity .5s ease-in-out;
+}
+.fadeIn {
+  opacity: 1;
+}
+.fadeOut {
+  opacity: 0;
+}
+.list {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.item {
+  width: 88px;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    margin-top: 16px;
+  }
+}

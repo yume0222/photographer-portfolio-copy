@@ -1,0 +1,28 @@
+.body {
+  margin-top: 40px;
+}
+.text {
+  margin-top: 40px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.75;
+}
+.text span {
+  display: block;
+}
+.button {
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .body {
+    margin-top: 56px;
+  }
+  .text {
+    margin-top: 56px;
+    font-size: 24px;
+  }
+  .text span {
+    display: inline;
+  }
+}
