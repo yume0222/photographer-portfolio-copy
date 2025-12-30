@@ -30,9 +30,11 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <div className="layout">
+          <Header />
+          <main className="content">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
